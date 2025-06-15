@@ -1,9 +1,5 @@
-Absolutely — here’s a complete, polished `README.md` you can include in your project folder. It's written for developers, cybersecurity learners, and potential contributors, and includes Docker + CLI instructions:
 
----
-
-````markdown
-# 🔐 Password Strength Analyzer CLI
+ Password Strength Analyzer CLI
 
 A powerful, terminal-based **Password Strength Analyzer** written in Python.  
 It checks your password for:
@@ -13,9 +9,7 @@ It checks your password for:
 - Password entropy
 - Exposure in real-world data breaches (via Have I Been Pwned)
 
----
-
-## 🚀 Features
+ Features
 
 ✅ Password strength scoring (up to 65 points)  
 ✅ Entropy estimation (bits of security)  
@@ -25,19 +19,16 @@ It checks your password for:
 ✅ JSON logging of results  
 ✅ Dockerized for safe, portable execution
 
----
+ Installation
 
-## 🛠 Installation
+ Option 1: Run Locally
 
-### 🔧 Option 1: Run Locally
-
-#### 1. Clone this repo
-```bash
+ 1. Clone this repo
+bash
 git clone https://github.com/YOUR_USERNAME/password-strength-analyzer.git
 cd password-strength-analyzer
-````
 
-#### 2. Install requirements
+2. Install requirements
 
 ```bash
 pip install -r requirements.txt
@@ -51,21 +42,21 @@ python password_strength_checker.py --interactive --check-breach --save-results
 
 ---
 
-### 🐳 Option 2: Run with Docker
+ Option 2: Run with Docker
 
-#### 1. Build Docker image
+ Build Docker image
 
 ```bash
 docker build -t password-checker .
 ```
 
-#### 2. Run interactively
+ 2. Run interactively
 
 ```bash
 docker run -it password-checker --interactive --check-breach --save-results
 ```
 
-#### 3. Mount current folder to save logs
+3. Mount current folder to save logs
 
 ```bash
 docker run -it -v $(pwd):/app password-checker --interactive --check-breach --save-results
@@ -73,7 +64,7 @@ docker run -it -v $(pwd):/app password-checker --interactive --check-breach --sa
 
 ---
 
-## ⚙️ Command Line Options
+ Command Line Options
 
 | Flag                   | Description                                    |
 | ---------------------- | ---------------------------------------------- |
@@ -84,7 +75,7 @@ docker run -it -v $(pwd):/app password-checker --interactive --check-breach --sa
 
 ---
 
-## 📊 Output Example
+ Output Example
 
 ```
 ============================================================
@@ -118,7 +109,7 @@ docker run -it -v $(pwd):/app password-checker --interactive --check-breach --sa
 
 ---
 
-## 🧪 Example Test Passwords
+ Example Test Passwords
 
 | Password       | Score | Strength    |
 | -------------- | ----- | ----------- |
@@ -128,7 +119,7 @@ docker run -it -v $(pwd):/app password-checker --interactive --check-breach --sa
 
 ---
 
-## 📂 Output Logs
+ Output Logs
 
 Results are saved in:
 
@@ -146,7 +137,7 @@ Each entry includes:
 
 ---
 
-## 💡 Future Ideas
+ Future Ideas
 
 * Add GUI (Tkinter or web-based)
 * Integrate with password manager API
@@ -155,26 +146,16 @@ Each entry includes:
 
 ---
 
-## 🙏 Credits
+ Credits
 
 * [HaveIBeenPwned API](https://haveibeenpwned.com/API/v3)
 * Built by [Syrus Wahome](https://github.com/YOUR_USERNAME)
 
 ---
 
-## 📜 License
+ License
 
 MIT License — feel free to use, fork, or contribute!
 
 ```
 
----
-
-Let me know if you want me to:
-
-- Write the `requirements.txt`
-- Create a GitHub repository structure
-- Auto-generate badges for GitHub (build status, license, Docker pulls, etc.)
-
-Ready when you are!
-```
